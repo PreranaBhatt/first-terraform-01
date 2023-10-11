@@ -1,4 +1,8 @@
 resource "aws_instance" "ec2" {
-  instance_type = "t2.micro"
-  ami="ami-04cb4ca688797756f"
+  instance_type =var.instance_type
+  ami= var.ami
+}
+
+output "ec2_instanceid" {
+  value = aws_instance.ec2.id
 }
