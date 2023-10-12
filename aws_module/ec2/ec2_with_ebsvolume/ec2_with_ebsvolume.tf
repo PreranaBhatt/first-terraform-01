@@ -1,6 +1,6 @@
 resource "aws_ebs_volume" "ebsVolume" {
 availability_zone = var.availability_zone
-  size              = 40
+  size              = var.size
 }
 
 
