@@ -7,3 +7,4 @@ availability_zone = var.availability_zone
 output "ebs_voulume_id" {
   value = aws_ebs_volume.ebsVolume.id
 }
+
