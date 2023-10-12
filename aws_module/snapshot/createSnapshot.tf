@@ -4,3 +4,7 @@ resource "aws_ebs_snapshot" "ebs_snapshot" {
     Name = "HelloWorld_snap"
   }
 }
+
+output "output_snapshotId" {
+  value = aws_ebs_snapshot.ebs_snapshot.id
+}
