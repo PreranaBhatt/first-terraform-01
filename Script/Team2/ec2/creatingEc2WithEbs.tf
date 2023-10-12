@@ -1,5 +1,5 @@
 module "ebs" {
-  source            = "../../../aws_module/ec2/ec2_with_ebsvolume"
+  source            = "../../../aws_module/ebs_volume"
   size              = 5
   availability_zone = "us-east-1a"
 }
